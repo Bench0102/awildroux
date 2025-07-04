@@ -25,9 +25,9 @@
             scroll-behavior: smooth;
         }
         
-        h1, h2, h3, h4, .brand {
+        h1, h2, h3, h4, a, .brand {
             font-family: 'Cormorant Garamond', serif;
-            font-weight: 600;
+            font-weight: 700;
         }
         
         .hero-video {
@@ -202,16 +202,31 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="#" class="brand text-3xl font-bold text-forest">Awildroux</a>
+            <a href="#" class="brand text-3xl font-bold" style="color: #D4A574">Awildroux</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-forest hover:text-sage transition font-bold">Home</a>
-                <a href="#about" class="text-forest hover:text-sage transition font-bold">About</a>
-                <a href="#shop" class="text-forest hover:text-sage transition font-bold">Shop</a>
-                <a href="#gallery" class="text-forest hover:text-sage transition font-bold">Gallery</a>
-                <a href="#contact" class="text-forest hover:text-sage transition font-bold">Contact</a>
+                <a href="#home" class="nav-link font-bold relative group transition-all duration-300" style="color: #D4A574">
+                    <span class="relative text-xl z-10 group-hover:text-opacity-80 transition-all duration-300">Home</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full" style="background: linear-gradient(to right, var(--sage), var(--turmeric))"></span>
+                </a>
+                <a href="#about" class="nav-link font-bold relative group transition-all duration-300" style="color: #D4A574">
+                    <span class="relative text-xl z-10 group-hover:text-opacity-80 transition-all duration-300">About</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full" style="background: linear-gradient(to right, var(--sage), var(--turmeric))"></span>
+                </a>
+                <a href="#shop" class="nav-link font-bold relative group transition-all duration-300" style="color: #D4A574">
+                    <span class="relative text-xl z-10 group-hover:text-opacity-80 transition-all duration-300">Shop</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full" style="background: linear-gradient(to right, var(--sage), var(--turmeric))"></span>
+                </a>
+                <a href="#gallery" class="nav-link font-bold relative group transition-all duration-300" style="color: #D4A574">
+                    <span class="relative text-xl z-10 group-hover:text-opacity-80 transition-all duration-300">Gallery</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full" style="background: linear-gradient(to right, var(--sage), var(--turmeric))"></span>
+                </a>
+                <a href="#contact" class="nav-link font-bold relative group transition-all duration-300" style="color: #D4A574">
+                    <span class="relative text-xl z-10 group-hover:text-opacity-80 transition-all duration-300">Contact</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full" style="background: linear-gradient(to right, var(--sage), var(--turmeric))"></span>
+                </a>
             </div>
             <div class="md:hidden">
-                <button id="menu-toggle" class="text-forest focus:outline-none">
+                <button id="menu-toggle" class="focus:outline-none" style="color: #D4A574">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -219,11 +234,11 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-cream shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 text-forest hover:text-sage font-bold">Home</a>
-                <a href="#about" class="block px-3 py-2 text-forest hover:text-sage font-bold">About</a>
-                <a href="#shop" class="block px-3 py-2 text-forest hover:text-sage font-bold">Shop</a>
-                <a href="#gallery" class="block px-3 py-2 text-forest hover:text-sage font-bold">Gallery</a>
-                <a href="#contact" class="block px-3 py-2 text-forest hover:text-sage font-bold">Contact</a>
+                <a href="#home" class="block px-3 py-2 font-bold rounded-lg transition-all duration-300" style="color: #D4A574" onmouseover="this.style.backgroundColor='rgba(163, 177, 138, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+                <a href="#about" class="block px-3 py-2 font-bold rounded-lg transition-all duration-300" style="color: #D4A574" onmouseover="this.style.backgroundColor='rgba(163, 177, 138, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">About</a>
+                <a href="#shop" class="block px-3 py-2 font-bold rounded-lg transition-all duration-300" style="color: #D4A574" onmouseover="this.style.backgroundColor='rgba(163, 177, 138, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">Shop</a>
+                <a href="#gallery" class="block px-3 py-2 font-bold rounded-lg transition-all duration-300" style="color: #D4A574" onmouseover="this.style.backgroundColor='rgba(163, 177, 138, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 font-bold rounded-lg transition-all duration-300" style="color: #D4A574" onmouseover="this.style.backgroundColor='rgba(163, 177, 138, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">Contact</a>
             </div>
         </div>
     </nav>
@@ -235,9 +250,9 @@
         </video>
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="text-center z-10 px-4 fade-in">
-            <h1 class="text-6xl md:text-8xl font-bold text-cream mb-4 delay-1">Awildroux</h1>
-            <h1 class="text-xl md:text-2xl font-bold text-cream mb-8 max-w-2xl mx-auto delay-2">Handcrafted living rooted in nature.</h1>
-            <a href="#about" class="inline-block bg-sage hover:bg-forest text-cream font-medium py-3 px-8 rounded-full transition delay-3">Explore the Wild</a>
+            <h1 class="text-6xl md:text-8xl font-bold text-[#D4A574] mb-4 delay-1">Awildroux</h1>
+            <h1 class="text-xl md:text-2xl font-bold  text-[#D4A574] mb-8 max-w-2xl mx-auto delay-2">Handcrafted living rooted in nature.</h1>
+            <a href="#about" class="inline-block bg-sage hover:bg-forest  text-[#D4A574] font-medium py-3 px-8 rounded-full transition delay-3">Explore the Wild</a>
         </div>
     </section>
 
